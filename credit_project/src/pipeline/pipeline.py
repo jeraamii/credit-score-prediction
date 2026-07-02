@@ -10,8 +10,11 @@ import warnings
 import numpy as np
 import pandas as pd
 import joblib
-import mlflow
-import mlflow.sklearn
+try:
+    import mlflow
+    import mlflow.sklearn
+except ImportError:
+    mlflow = None
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder, StandardScaler, OrdinalEncoder
