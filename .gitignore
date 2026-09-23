@@ -1,0 +1,10 @@
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+data/*.csv
+models/*.pkl
+mlflow.db
+mlruns/
+.DS_Store
