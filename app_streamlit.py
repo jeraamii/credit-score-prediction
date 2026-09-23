@@ -55,7 +55,7 @@ best_model_name = NAME_PATH.read_text().strip() if NAME_PATH.exists() else "—"
 
 # SIDEBAR
 st.sidebar.image("https://img.icons8.com/fluency/96/money.png", width=80)
-st.sidebar.title("Credit Score (Michael Yeremia - 2802504876)")
+st.sidebar.title("Credit Score Predictor by Michael Yeremia")
 st.sidebar.markdown("---")
 
 page = st.sidebar.radio(
