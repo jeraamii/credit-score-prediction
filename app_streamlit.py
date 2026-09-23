@@ -252,7 +252,7 @@ elif page == "Prediksi Individual":
 
 
 # PAGE: BATCH
-elif page == "📊 Prediksi Batch (CSV)":
+elif page == "Prediksi Batch (CSV)":
     st.title("📊 Prediksi Batch")
     st.markdown(
         "Upload file CSV dengan format yang sama seperti dataset training "
