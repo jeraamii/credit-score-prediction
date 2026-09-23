@@ -53,9 +53,9 @@ The dataset and model artifacts (`.pkl` files) are not included directly in this
 
 | File | Link |
 |---|---|
-| `data/C.csv` | [ADD Google Drive link] |
-| `models/best_model.pkl` | [ADD Google Drive link] |
-| `models/preprocessor.pkl` | [ADD Google Drive link] |
+| `data/C.csv` | https://drive.google.com/file/d/1x1dKmTit4f0oJ2Pivpy8BupVh-AtoYD5/view?usp=sharing |
+| `models/best_model.pkl` | https://drive.google.com/file/d/1kErd13_BHMg0gE9b7IQOnkiFLwJbBd0L/view?usp=sharing |
+| `models/preprocessor.pkl` | https://drive.google.com/file/d/1Ae6ZpjwIhV4iRpT56rDFDGWaXh_LjD0d/view?usp=sharing |
 
 After downloading, place each file according to the folder structure above. Alternatively, retrain from scratch:
 
