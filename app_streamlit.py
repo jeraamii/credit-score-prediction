@@ -24,9 +24,9 @@ from pipeline import Preprocessor  # noqa: F401
 import gdown
 
 FILE_IDS = {
-    "models/best_model.pkl": "ISI_FILE_ID_MODEL",
-    "models/preprocessor.pkl": "ISI_FILE_ID_PREPROCESSOR",
-    "data/C.csv": "ISI_FILE_ID_DATASET",
+    "models/best_model.pkl": "1kErd13_BHMg0gE9b7IQOnkiFLwJbBd0L",
+    "models/preprocessor.pkl": "1Ae6ZpjwIhV4iRpT56rDFDGWaXh_LjD0d",
+    "data/C.csv": "1x1dKmTit4f0oJ2Pivpy8BupVh-AtoYD5",
 }
 
 def ensure_files():
