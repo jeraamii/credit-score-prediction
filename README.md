@@ -15,7 +15,8 @@ This project covers the end-to-end ML lifecycle: exploratory data analysis, mode
 - **REST API** — inference backend built with FastAPI (`api/main.py`), consumed by `app_frontend.py`
 
 ---
-
+Live Demo : https://credit-score-prediction-my.streamlit.app/
+---
 ## Preview
 
 | Target Distribution | Confusion Matrix | Feature Importance |
