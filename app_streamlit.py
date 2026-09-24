@@ -21,6 +21,23 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent / "src" / "pipeline"))
 from pipeline import Preprocessor  # noqa: F401
 
+import gdown
+
+FILE_IDS = {
+    "models/best_model.pkl": "ISI_FILE_ID_MODEL",
+    "models/preprocessor.pkl": "ISI_FILE_ID_PREPROCESSOR",
+    "data/C.csv": "ISI_FILE_ID_DATASET",
+}
+
+def ensure_files():
+    for rel_path, file_id in FILE_IDS.items():
+        path = Path(__file__).parent / rel_path
+        if not path.exists():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            gdown.download(id=file_id, output=str(path), quiet=False)
+
+
+
 # PAGE CONFIG
 st.set_page_config(
     page_title="Credit Score Predictor",
@@ -31,6 +48,7 @@ st.set_page_config(
 
 # PATHS & MODEL LOADING
 BASE_DIR    = Path(__file__).parent
+ensure_files()
 MODEL_PATH  = BASE_DIR / "models" / "best_model.pkl"
 PREP_PATH   = BASE_DIR / "models" / "preprocessor.pkl"
 DATA_PATH   = BASE_DIR / "data" / "C.csv"
